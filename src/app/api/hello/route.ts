@@ -14,7 +14,8 @@ export async function POST(request: Request) {
       "temperature": 0.7
     }, {
       headers: {
-        Authorization: 'Bearer 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'
+        Authorization: 'Bearer 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',
+        'Content-Type': 'application/json'
       }
     })
     return NextResponse.json(res.data)
