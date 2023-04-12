@@ -14,9 +14,9 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  if (!openApi) {
-    openApi = new OpenAIApi(configuration);
-  }
+  // if (!openApi) {
+  //   openApi = new OpenAIApi(configuration);
+  // }
   // try {
   //   const body = await request.json()
   //   const res = await openApi.createCompletion({
