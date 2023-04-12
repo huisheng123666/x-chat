@@ -1,31 +1,23 @@
-import { Configuration, OpenAIApi } from "openai";
-import type { OpenAIApi as OpenApiType } from 'openai'
 import {NextResponse} from "next/server";
-
-const configuration = new Configuration({
-  organization: "org-w5EeDSKRsgNH5atqjnBnz3Ui",
-  apiKey: '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',
-});
-
-let openApi: OpenApiType | null = null
+import axios from "axios";
 
 export async function GET(request: Request) {
   return new Response('Hello, Next.js!')
 }
 
 export async function POST(request: Request) {
-  if (!openApi) {
-    openApi = new OpenAIApi(configuration);
-  }
   try {
-    const body = await request.json()
-    const res = await openApi.createCompletion({
-      model: "text-davinci-003",
-      prompt: body.msg,
-      temperature: 0,
-      max_tokens: 7,
+    // const body = await request.json()
+    const res = await axios.post('https://api.openai.com/v1/chat/completions', {
+      "model": "gpt-3.5-turbo",
+      "messages": [{"role": "user", "content": "你好"}],
+      "temperature": 0.7
+    }, {
+      headers: {
+        Authorization: 'Bearer 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'
+      }
     })
-    return NextResponse.json(res)
+    return NextResponse.json(res.data)
   } catch (err) {
     console.log(err)
     return NextResponse.json({ code: 1 })
