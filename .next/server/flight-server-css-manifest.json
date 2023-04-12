@@ -1,4 +1,1 @@
-{
-  "cssImports": {},
-  "cssModules": {}
-}
+{"cssImports":{"/Users/xmw/my-project/chat-gpt/src/app/page.tsx":["/Users/xmw/my-project/chat-gpt/src/app/page.module.css","/Users/xmw/my-project/chat-gpt/node_modules/.pnpm/next@13.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/next/font/google/target.css?{\"path\":\"src/app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"],"/Users/xmw/my-project/chat-gpt/src/app/layout.tsx":["/Users/xmw/my-project/chat-gpt/src/app/globals.css"]},"cssModules":{"/Users/xmw/my-project/chat-gpt/src/app/page":["/Users/xmw/my-project/chat-gpt/src/app/page.module.css","/Users/xmw/my-project/chat-gpt/node_modules/.pnpm/next@13.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/next/font/google/target.css?{\"path\":\"src/app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}","/Users/xmw/my-project/chat-gpt/src/app/globals.css"]}}
