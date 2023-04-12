@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     })
     return NextResponse.json(res.data)
   } catch (err) {
-    console.log(err)
-    return NextResponse.json({ code: 1 })
+    console.log(err.response)
+    return NextResponse.json(err.response)
   }
 }
